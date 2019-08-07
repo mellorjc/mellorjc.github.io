@@ -88,6 +88,11 @@ a{
     padding-left: 10px;
 }
 
+.list-group-item {
+    background-color: #101214;
+}
+
+
 /* media queres */
 @media(max-width:780px){
     .grid-2{
