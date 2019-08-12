@@ -70,9 +70,10 @@ a{
     width: 550px;
 }
 
-.one a{
+.one {
     width:200px;
 }
+
 /* animations / utilities */
 .section-2 a:hover{
     font-size: 1.3rem;
