@@ -12,6 +12,9 @@ If you can't update the system pandoc you can set the PATH variable to point to 
 
 - To output to word document huxtable also requires [flextable](https://davidgohel.github.io/flextable/index.html)
 
+## Caveats
+
+The huxtable package doesn't support captions for word documents.
 
 
 ## Example use
@@ -71,6 +74,98 @@ example.huxtable %>%
 add_colnames %>%
 set_bold(1, everywhere, TRUE)
 ```
+
+### Cell borders
+
+To add a bottom border to the first column we use `set_bottom_border` providing the row, columns, and line width of the border.
+Similarly we use `set_top_border`.
+
+```{r echo = TRUE, results='asis', warning=FALSE, cache=FALSE}
+library(magrittr)
+
+example.huxtable %>% 
+add_colnames %>%
+set_bold(1, everywhere, TRUE) %>%
+set_bottom_border(1, everywhere, 2) %>%
+set_top_border(1, everywhere, 2)
+```
+
+
+### Adding rows and merging cells
+
+We can add rows using `add_rows` and then we can merge cells in a row using `merge_cells`.
+
+```{r echo = TRUE, results='asis', warning=FALSE, cache=FALSE}
+library(magrittr)
+
+hdr1 <- hux("Sub-header for FooBar", "", "")
+hdr2 <- hux("Sub-header for FizzBuzz", "", "")
+
+example.huxtable %>% 
+add_colnames %>%
+set_bold(1, everywhere, TRUE) %>%
+set_bottom_border(1, everywhere, 2) %>%
+set_top_border(1, everywhere, 2) %>%
+add_rows(hdr1, 1) %>%  # the row is added **after** the specified row (new row is row 2)
+merge_cells(2, c(1, 3)) %>%
+add_rows(hdr2, 4) %>%  # at this point "Bar" is in row 4
+merge_cells(5, c(1, 3))
+
+```
+
+### Adding footnotes
+
+To add footnotes to a huxtable can be done by piping to `add_footnote`.
+
+
+```{r echo = TRUE, results='asis', warning=FALSE, cache=FALSE}
+library(magrittr)
+
+hdr1 <- hux("Sub-header for FooBar", "", "")
+hdr2 <- hux("Sub-header for FizzBuzz", "", "")
+
+example.huxtable %>% 
+add_colnames %>%
+set_bold(1, everywhere, TRUE) %>%
+set_bottom_border(1, everywhere, 2) %>%
+set_top_border(1, everywhere, 2) %>%
+add_rows(hdr1, 1) %>%  # the row is added **after** the specified row (new row is row 2)
+merge_cells(2, c(1, 3)) %>%
+add_rows(hdr2, 4) %>%  # at this point "Bar" is in row 4
+merge_cells(5, c(1, 3)) %>%
+add_footnote("This is the footnote text for the table")
+
+```
+
+
+### Adding a caption
+
+A caption can be added using `set_caption` and the position of the caption can be set using `set_caption_pos`.
+However this will only work when exporting to LaTeX, HTML, and PDF.
+
+
+```{r echo = TRUE, results='asis', warning=FALSE, cache=FALSE}
+library(magrittr)
+
+hdr1 <- hux("Sub-header for FooBar", "", "")
+hdr2 <- hux("Sub-header for FizzBuzz", "", "")
+
+example.huxtable %>% 
+add_colnames %>%
+set_bold(1, everywhere, TRUE) %>%
+set_bottom_border(1, everywhere, 2) %>%
+set_top_border(1, everywhere, 2) %>%
+add_rows(hdr1, 1) %>%  # the row is added **after** the specified row (new row is row 2)
+merge_cells(2, c(1, 3)) %>%
+add_rows(hdr2, 4) %>%  # at this point "Bar" is in row 4
+merge_cells(5, c(1, 3)) %>%
+add_footnote("This is the footnote text for the table") %>%
+set_caption("Caption text for table") %>%
+set_caption_pos("bottom")
+
+```
+
+
 
 
 
