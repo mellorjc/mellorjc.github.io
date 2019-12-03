@@ -199,7 +199,8 @@ summary {
 <p>In this example we are going to use the following toy data frame.</p>
 <pre class="r"><code>example.df &lt;- data.frame(Col1=c('Foo', 'Bar', 'Fizz', 'Buzz'),
                          Col2=c(1, 2, 3, 4),
-                         Col3=c(1.12345, 1.54321, 4.12345, 4.54321))</code></pre>
+                         Col3=c(1.12345, 1.54321, 4.12345, 4.54321))
+colnames(example.df) &lt;- c(&quot;Col 1&quot;, &quot;Col 2&quot;, &quot;Col 3&quot;)</code></pre>
 <p>The first thing we need to do is turn the dataframe <code>example.df</code> into a huxtable.</p>
 <div id="default-output" class="section level3">
 <h3>Default output</h3>
@@ -240,9 +241,9 @@ example.huxtable %&gt;%
 add_colnames</code></pre>
 <table class="huxtable" style="border-collapse: collapse; margin-bottom: 2em; margin-top: 2em; width: 50%; margin-left: auto; margin-right: auto;  ">
 <col><col><col><tr>
-<td style="vertical-align: top; text-align: left; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">Col1</td>
-<td style="vertical-align: top; text-align: left; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">Col2</td>
-<td style="vertical-align: top; text-align: left; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">Col3</td>
+<td style="vertical-align: top; text-align: left; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">Col 1</td>
+<td style="vertical-align: top; text-align: left; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">Col 2</td>
+<td style="vertical-align: top; text-align: left; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">Col 3</td>
 </tr>
 <tr>
 <td style="vertical-align: top; text-align: left; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">Foo</td>
@@ -277,9 +278,9 @@ add_colnames %&gt;%
 set_bold(1, everywhere, TRUE)</code></pre>
 <table class="huxtable" style="border-collapse: collapse; margin-bottom: 2em; margin-top: 2em; width: 50%; margin-left: auto; margin-right: auto;  ">
 <col><col><col><tr>
-<td style="vertical-align: top; text-align: left; white-space: nowrap; padding: 4pt 4pt 4pt 4pt; font-weight: bold;">Col1</td>
-<td style="vertical-align: top; text-align: left; white-space: nowrap; padding: 4pt 4pt 4pt 4pt; font-weight: bold;">Col2</td>
-<td style="vertical-align: top; text-align: left; white-space: nowrap; padding: 4pt 4pt 4pt 4pt; font-weight: bold;">Col3</td>
+<td style="vertical-align: top; text-align: left; white-space: nowrap; padding: 4pt 4pt 4pt 4pt; font-weight: bold;">Col 1</td>
+<td style="vertical-align: top; text-align: left; white-space: nowrap; padding: 4pt 4pt 4pt 4pt; font-weight: bold;">Col 2</td>
+<td style="vertical-align: top; text-align: left; white-space: nowrap; padding: 4pt 4pt 4pt 4pt; font-weight: bold;">Col 3</td>
 </tr>
 <tr>
 <td style="vertical-align: top; text-align: left; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">Foo</td>
@@ -316,9 +317,9 @@ set_bottom_border(1, everywhere, 2) %&gt;%
 set_top_border(1, everywhere, 2)</code></pre>
 <table class="huxtable" style="border-collapse: collapse; margin-bottom: 2em; margin-top: 2em; width: 50%; margin-left: auto; margin-right: auto;  ">
 <col><col><col><tr>
-<td style="vertical-align: top; text-align: left; white-space: nowrap; border-style: solid solid solid solid; border-width: 2pt 0pt 2pt 0pt; padding: 4pt 4pt 4pt 4pt; font-weight: bold;">Col1</td>
-<td style="vertical-align: top; text-align: left; white-space: nowrap; border-style: solid solid solid solid; border-width: 2pt 0pt 2pt 0pt; padding: 4pt 4pt 4pt 4pt; font-weight: bold;">Col2</td>
-<td style="vertical-align: top; text-align: left; white-space: nowrap; border-style: solid solid solid solid; border-width: 2pt 0pt 2pt 0pt; padding: 4pt 4pt 4pt 4pt; font-weight: bold;">Col3</td>
+<td style="vertical-align: top; text-align: left; white-space: nowrap; border-style: solid solid solid solid; border-width: 2pt 0pt 2pt 0pt; padding: 4pt 4pt 4pt 4pt; font-weight: bold;">Col 1</td>
+<td style="vertical-align: top; text-align: left; white-space: nowrap; border-style: solid solid solid solid; border-width: 2pt 0pt 2pt 0pt; padding: 4pt 4pt 4pt 4pt; font-weight: bold;">Col 2</td>
+<td style="vertical-align: top; text-align: left; white-space: nowrap; border-style: solid solid solid solid; border-width: 2pt 0pt 2pt 0pt; padding: 4pt 4pt 4pt 4pt; font-weight: bold;">Col 3</td>
 </tr>
 <tr>
 <td style="vertical-align: top; text-align: left; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">Foo</td>
@@ -362,9 +363,9 @@ add_rows(hdr2, 4) %&gt;%  # at this point &quot;Bar&quot; is in row 4
 merge_cells(5, c(1, 3))</code></pre>
 <table class="huxtable" style="border-collapse: collapse; margin-bottom: 2em; margin-top: 2em; width: 50%; margin-left: auto; margin-right: auto;  ">
 <col><col><col><tr>
-<td style="vertical-align: top; text-align: left; white-space: nowrap; border-style: solid solid solid solid; border-width: 2pt 0pt 2pt 0pt; padding: 4pt 4pt 4pt 4pt; font-weight: bold;">Col1</td>
-<td style="vertical-align: top; text-align: left; white-space: nowrap; border-style: solid solid solid solid; border-width: 2pt 0pt 2pt 0pt; padding: 4pt 4pt 4pt 4pt; font-weight: bold;">Col2</td>
-<td style="vertical-align: top; text-align: left; white-space: nowrap; border-style: solid solid solid solid; border-width: 2pt 0pt 2pt 0pt; padding: 4pt 4pt 4pt 4pt; font-weight: bold;">Col3</td>
+<td style="vertical-align: top; text-align: left; white-space: nowrap; border-style: solid solid solid solid; border-width: 2pt 0pt 2pt 0pt; padding: 4pt 4pt 4pt 4pt; font-weight: bold;">Col 1</td>
+<td style="vertical-align: top; text-align: left; white-space: nowrap; border-style: solid solid solid solid; border-width: 2pt 0pt 2pt 0pt; padding: 4pt 4pt 4pt 4pt; font-weight: bold;">Col 2</td>
+<td style="vertical-align: top; text-align: left; white-space: nowrap; border-style: solid solid solid solid; border-width: 2pt 0pt 2pt 0pt; padding: 4pt 4pt 4pt 4pt; font-weight: bold;">Col 3</td>
 </tr>
 <tr>
 <td colspan="3" style="vertical-align: top; text-align: left; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">Sub-header for FooBar</td>
@@ -415,9 +416,9 @@ merge_cells(5, c(1, 3)) %&gt;%
 add_footnote(&quot;This is the footnote text for the table&quot;)</code></pre>
 <table class="huxtable" style="border-collapse: collapse; margin-bottom: 2em; margin-top: 2em; width: 50%; margin-left: auto; margin-right: auto;  ">
 <col><col><col><tr>
-<td style="vertical-align: top; text-align: left; white-space: nowrap; border-style: solid solid solid solid; border-width: 2pt 0pt 2pt 0pt; padding: 4pt 4pt 4pt 4pt; font-weight: bold;">Col1</td>
-<td style="vertical-align: top; text-align: left; white-space: nowrap; border-style: solid solid solid solid; border-width: 2pt 0pt 2pt 0pt; padding: 4pt 4pt 4pt 4pt; font-weight: bold;">Col2</td>
-<td style="vertical-align: top; text-align: left; white-space: nowrap; border-style: solid solid solid solid; border-width: 2pt 0pt 2pt 0pt; padding: 4pt 4pt 4pt 4pt; font-weight: bold;">Col3</td>
+<td style="vertical-align: top; text-align: left; white-space: nowrap; border-style: solid solid solid solid; border-width: 2pt 0pt 2pt 0pt; padding: 4pt 4pt 4pt 4pt; font-weight: bold;">Col 1</td>
+<td style="vertical-align: top; text-align: left; white-space: nowrap; border-style: solid solid solid solid; border-width: 2pt 0pt 2pt 0pt; padding: 4pt 4pt 4pt 4pt; font-weight: bold;">Col 2</td>
+<td style="vertical-align: top; text-align: left; white-space: nowrap; border-style: solid solid solid solid; border-width: 2pt 0pt 2pt 0pt; padding: 4pt 4pt 4pt 4pt; font-weight: bold;">Col 3</td>
 </tr>
 <tr>
 <td colspan="3" style="vertical-align: top; text-align: left; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">Sub-header for FooBar</td>
@@ -473,9 +474,9 @@ set_caption(&quot;Caption text for table&quot;) %&gt;%
 set_caption_pos(&quot;bottom&quot;)</code></pre>
 <table class="huxtable" style="border-collapse: collapse; margin-bottom: 2em; margin-top: 2em; width: 50%; margin-left: auto; margin-right: auto;  ">
 <caption style="caption-side: bottom; text-align: center;">Caption text for table</caption><col><col><col><tr>
-<td style="vertical-align: top; text-align: left; white-space: nowrap; border-style: solid solid solid solid; border-width: 2pt 0pt 2pt 0pt; padding: 4pt 4pt 4pt 4pt; font-weight: bold;">Col1</td>
-<td style="vertical-align: top; text-align: left; white-space: nowrap; border-style: solid solid solid solid; border-width: 2pt 0pt 2pt 0pt; padding: 4pt 4pt 4pt 4pt; font-weight: bold;">Col2</td>
-<td style="vertical-align: top; text-align: left; white-space: nowrap; border-style: solid solid solid solid; border-width: 2pt 0pt 2pt 0pt; padding: 4pt 4pt 4pt 4pt; font-weight: bold;">Col3</td>
+<td style="vertical-align: top; text-align: left; white-space: nowrap; border-style: solid solid solid solid; border-width: 2pt 0pt 2pt 0pt; padding: 4pt 4pt 4pt 4pt; font-weight: bold;">Col 1</td>
+<td style="vertical-align: top; text-align: left; white-space: nowrap; border-style: solid solid solid solid; border-width: 2pt 0pt 2pt 0pt; padding: 4pt 4pt 4pt 4pt; font-weight: bold;">Col 2</td>
+<td style="vertical-align: top; text-align: left; white-space: nowrap; border-style: solid solid solid solid; border-width: 2pt 0pt 2pt 0pt; padding: 4pt 4pt 4pt 4pt; font-weight: bold;">Col 3</td>
 </tr>
 <tr>
 <td colspan="3" style="vertical-align: top; text-align: left; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">Sub-header for FooBar</td>

@@ -25,6 +25,7 @@ In this example we are going to use the following toy data frame.
 example.df <- data.frame(Col1=c('Foo', 'Bar', 'Fizz', 'Buzz'),
                          Col2=c(1, 2, 3, 4),
                          Col3=c(1.12345, 1.54321, 4.12345, 4.54321))
+colnames(example.df) <- c("Col 1", "Col 2", "Col 3")
 
 ```
 
@@ -58,6 +59,8 @@ library(magrittr)
 example.huxtable %>% 
 add_colnames
 ```
+
+
 
 ### Bolding cells
 
@@ -164,8 +167,5 @@ set_caption("Caption text for table") %>%
 set_caption_pos("bottom")
 
 ```
-
-
-
 
 
