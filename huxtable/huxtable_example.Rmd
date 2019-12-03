@@ -14,7 +14,9 @@ If you can't update the system pandoc you can set the PATH variable to point to 
 
 
 
-# Example use
+## Example use
+
+In this example we are going to use the following toy data frame.
 
 ```{r echo = TRUE, results='asis', warning=FALSE, cache=FALSE}
 example.df <- data.frame(Col1=c('Foo', 'Bar', 'Fizz', 'Buzz'),
@@ -23,11 +25,35 @@ example.df <- data.frame(Col1=c('Foo', 'Bar', 'Fizz', 'Buzz'),
 
 ```
 
+The first thing we need to do is turn the dataframe `example.df` into a huxtable.
+
+
+### Default output
 
 ```{r echo = TRUE, results='asis', warning=FALSE, cache=FALSE}
 library(huxtable)
 
 example.huxtable <- as_hux(example.df)
- 
-
 ```
+
+The huxtable `example.huxtable` by default looks like this.
+```{r echo = FALSE, results='asis', warning=FALSE, cache=FALSE}
+example.huxtable
+```
+
+### Adding column names to the table
+
+We can add formatting to this table. Here we use the pipe interface to huxtable. 
+Using the pipe interface requires the `magrittr` library. 
+
+The first thing we want to do is add the column names to the outputted table.
+To do this we pipe `example.huxtable` through `add_colnames`. 
+
+The huxtable `example.huxtable` by default looks like this.
+```{r echo = TRUE, results='asis', warning=FALSE, cache=FALSE}
+library(magrittr)
+
+example.huxtable %>% 
+add_colnames
+```
+

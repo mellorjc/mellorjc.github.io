@@ -190,15 +190,81 @@ summary {
 <li><p>To output to word document huxtable also requires <a href="https://davidgohel.github.io/flextable/index.html">flextable</a></p></li>
 </ul>
 </div>
-</div>
-<div id="example-use" class="section level1">
-<h1>Example use</h1>
+<div id="example-use" class="section level2">
+<h2>Example use</h2>
+<p>In this example we are going to use the following toy data frame.</p>
 <pre class="r"><code>example.df &lt;- data.frame(Col1=c('Foo', 'Bar', 'Fizz', 'Buzz'),
                          Col2=c(1, 2, 3, 4),
                          Col3=c(1.12345, 1.54321, 4.12345, 4.54321))</code></pre>
+<p>The first thing we need to do is turn the dataframe <code>example.df</code> into a huxtable.</p>
+<div id="default-output" class="section level3">
+<h3>Default output</h3>
 <pre class="r"><code>library(huxtable)
 
 example.huxtable &lt;- as_hux(example.df)</code></pre>
+<p>The huxtable <code>example.huxtable</code> by default looks like this. <table class="huxtable" style="border-collapse: collapse; margin-bottom: 2em; margin-top: 2em; width: 50%; margin-left: auto; margin-right: auto;  ">
+<col><col><col><tr>
+<td style="vertical-align: top; text-align: left; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">Foo</td>
+<td style="vertical-align: top; text-align: right; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">1</td>
+<td style="vertical-align: top; text-align: right; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">1.12</td>
+</tr>
+<tr>
+<td style="vertical-align: top; text-align: left; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">Bar</td>
+<td style="vertical-align: top; text-align: right; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">2</td>
+<td style="vertical-align: top; text-align: right; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">1.54</td>
+</tr>
+<tr>
+<td style="vertical-align: top; text-align: left; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">Fizz</td>
+<td style="vertical-align: top; text-align: right; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">3</td>
+<td style="vertical-align: top; text-align: right; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">4.12</td>
+</tr>
+<tr>
+<td style="vertical-align: top; text-align: left; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">Buzz</td>
+<td style="vertical-align: top; text-align: right; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">4</td>
+<td style="vertical-align: top; text-align: right; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">4.54</td>
+</tr>
+</table>
+</p>
+</div>
+<div id="adding-column-names-to-the-table" class="section level3">
+<h3>Adding column names to the table</h3>
+<p>We can add formatting to this table. Here we use the pipe interface to huxtable. Using the pipe interface requires the <code>magrittr</code> library.</p>
+<p>The first thing we want to do is add the column names to the outputted table. To do this we pipe <code>example.huxtable</code> through <code>add_colnames</code>.</p>
+<p>The huxtable <code>example.huxtable</code> by default looks like this.</p>
+<pre class="r"><code>library(magrittr)
+
+example.huxtable %&gt;% 
+add_colnames</code></pre>
+<table class="huxtable" style="border-collapse: collapse; margin-bottom: 2em; margin-top: 2em; width: 50%; margin-left: auto; margin-right: auto;  ">
+<col><col><col><tr>
+<td style="vertical-align: top; text-align: left; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">Col1</td>
+<td style="vertical-align: top; text-align: left; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">Col2</td>
+<td style="vertical-align: top; text-align: left; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">Col3</td>
+</tr>
+<tr>
+<td style="vertical-align: top; text-align: left; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">Foo</td>
+<td style="vertical-align: top; text-align: right; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">1</td>
+<td style="vertical-align: top; text-align: right; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">1.12</td>
+</tr>
+<tr>
+<td style="vertical-align: top; text-align: left; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">Bar</td>
+<td style="vertical-align: top; text-align: right; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">2</td>
+<td style="vertical-align: top; text-align: right; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">1.54</td>
+</tr>
+<tr>
+<td style="vertical-align: top; text-align: left; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">Fizz</td>
+<td style="vertical-align: top; text-align: right; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">3</td>
+<td style="vertical-align: top; text-align: right; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">4.12</td>
+</tr>
+<tr>
+<td style="vertical-align: top; text-align: left; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">Buzz</td>
+<td style="vertical-align: top; text-align: right; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">4</td>
+<td style="vertical-align: top; text-align: right; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">4.54</td>
+</tr>
+</table>
+
+</div>
+</div>
 </div>
 
 
