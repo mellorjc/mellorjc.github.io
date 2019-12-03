@@ -2,7 +2,7 @@
 
 [Huxtable](https://hughjonesd.github.io/huxtable/) is an R library to create tables that can be output to LaTeX, HTML, and Word documents.
 
-
+These notes are run using R3.6 and pandoc 2.8.0.1.
 
 ## Requirements
 
@@ -11,6 +11,14 @@ If you can't update the system pandoc you can set the PATH variable to point to 
 
 
 - To output to word document huxtable also requires [flextable](https://davidgohel.github.io/flextable/index.html)
+
+We can install the R packages like so (if they aren't already installed)
+```
+install.packages("flextable")
+install.packages("huxtable")
+```
+
+
 
 ## Caveats
 

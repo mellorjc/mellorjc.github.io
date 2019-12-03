@@ -183,12 +183,16 @@ summary {
 <div id="creating-tables-in-huxtable" class="section level1">
 <h1>Creating tables in huxtable</h1>
 <p><a href="https://hughjonesd.github.io/huxtable/">Huxtable</a> is an R library to create tables that can be output to LaTeX, HTML, and Word documents.</p>
+<p>These notes are run using R3.6 and pandoc 2.8.0.1.</p>
 <div id="requirements" class="section level2">
 <h2>Requirements</h2>
 <ul>
 <li><p>To use huxtable requires <a href="https://pandoc.org/">pandoc</a> version <a href="https://github.com/jgm/pandoc/releases/tag/2.8.0.1">&gt;2.0</a>. If you can’t update the system pandoc you can set the PATH variable to point to a local version when running R.</p></li>
 <li><p>To output to word document huxtable also requires <a href="https://davidgohel.github.io/flextable/index.html">flextable</a></p></li>
 </ul>
+<p>We can install the R packages like so (if they aren’t already installed)</p>
+<pre><code>install.packages(&quot;flextable&quot;)
+install.packages(&quot;huxtable&quot;)</code></pre>
 </div>
 <div id="caveats" class="section level2">
 <h2>Caveats</h2>
