@@ -49,11 +49,28 @@ Using the pipe interface requires the `magrittr` library.
 The first thing we want to do is add the column names to the outputted table.
 To do this we pipe `example.huxtable` through `add_colnames`. 
 
-The huxtable `example.huxtable` by default looks like this.
 ```{r echo = TRUE, results='asis', warning=FALSE, cache=FALSE}
 library(magrittr)
 
 example.huxtable %>% 
 add_colnames
 ```
+
+### Bolding cells
+
+Next we add bolding to the 1st row by piping to `set_bold`.
+The first argument of the pipe interface is the row number to apply bold to.
+The second argument is the column number where `everywhere` means every column. 
+The third argument is a boolean value for whether the cell is bold (`TRUE`) or not (`FALSE`).
+
+
+```{r echo = TRUE, results='asis', warning=FALSE, cache=FALSE}
+library(magrittr)
+
+example.huxtable %>% 
+add_colnames %>%
+set_bold(1, everywhere, TRUE)
+```
+
+
 
