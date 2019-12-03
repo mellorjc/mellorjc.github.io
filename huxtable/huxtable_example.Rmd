@@ -16,7 +16,7 @@ If you can't update the system pandoc you can set the PATH variable to point to 
 
 # Example use
 
-```{r echo = FALSE, results='asis', warning=FALSE, cache=FALSE}
+```{r echo = TRUE, results='asis', warning=FALSE, cache=FALSE}
 example.df <- data.frame(Col1=c('Foo', 'Bar', 'Fizz', 'Buzz'),
                          Col2=c(1, 2, 3, 4),
                          Col3=c(1.12345, 1.54321, 4.12345, 4.54321))
@@ -24,7 +24,7 @@ example.df <- data.frame(Col1=c('Foo', 'Bar', 'Fizz', 'Buzz'),
 ```
 
 
-```{r echo = FALSE, results='asis', warning=FALSE, cache=FALSE}
+```{r echo = TRUE, results='asis', warning=FALSE, cache=FALSE}
 library(huxtable)
 
 example.huxtable <- as_hux(example.df)
