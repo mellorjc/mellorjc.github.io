@@ -510,6 +510,125 @@ set_caption_pos(&quot;bottom&quot;)</code></pre>
 </table>
 
 </div>
+<div id="setting-the-column-widths" class="section level3">
+<h3>Setting the column widths</h3>
+<p>We can set the column widths using <code>set_col_width</code>.</p>
+<pre class="r"><code>library(magrittr)
+
+hdr1 &lt;- hux(&quot;Sub-header for FooBar&quot;, &quot;&quot;, &quot;&quot;)
+hdr2 &lt;- hux(&quot;Sub-header for FizzBuzz&quot;, &quot;&quot;, &quot;&quot;)
+
+example.huxtable %&gt;% 
+add_colnames %&gt;%
+set_bold(1, everywhere, TRUE) %&gt;%
+set_bottom_border(1, everywhere, 2) %&gt;%
+set_top_border(1, everywhere, 2) %&gt;%
+add_rows(hdr1, 1) %&gt;%  # the row is added **after** the specified row (new row is row 2)
+merge_cells(2, c(1, 3)) %&gt;%
+add_rows(hdr2, 4) %&gt;%  # at this point &quot;Bar&quot; is in row 4
+merge_cells(5, c(1, 3)) %&gt;%
+add_footnote(&quot;This is the footnote text for the table&quot;) %&gt;%
+set_caption(&quot;Caption text for table&quot;) %&gt;%
+set_caption_pos(&quot;bottom&quot;) %&gt;%
+set_col_width(c(2.0, 3.0, 1.5))</code></pre>
+<table class="huxtable" style="border-collapse: collapse; margin-bottom: 2em; margin-top: 2em; width: 50%; margin-left: auto; margin-right: auto;  ">
+<caption style="caption-side: bottom; text-align: center;">Caption text for table</caption><col style="width: 200%"><col style="width: 300%"><col style="width: 150%"><tr>
+<td style="vertical-align: top; text-align: left; white-space: nowrap; border-style: solid solid solid solid; border-width: 2pt 0pt 2pt 0pt; padding: 4pt 4pt 4pt 4pt; font-weight: bold;">Col 1</td>
+<td style="vertical-align: top; text-align: left; white-space: nowrap; border-style: solid solid solid solid; border-width: 2pt 0pt 2pt 0pt; padding: 4pt 4pt 4pt 4pt; font-weight: bold;">Col 2</td>
+<td style="vertical-align: top; text-align: left; white-space: nowrap; border-style: solid solid solid solid; border-width: 2pt 0pt 2pt 0pt; padding: 4pt 4pt 4pt 4pt; font-weight: bold;">Col 3</td>
+</tr>
+<tr>
+<td colspan="3" style="vertical-align: top; text-align: left; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">Sub-header for FooBar</td>
+</tr>
+<tr>
+<td style="vertical-align: top; text-align: left; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">Foo</td>
+<td style="vertical-align: top; text-align: right; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">1</td>
+<td style="vertical-align: top; text-align: right; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">1.12</td>
+</tr>
+<tr>
+<td style="vertical-align: top; text-align: left; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">Bar</td>
+<td style="vertical-align: top; text-align: right; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">2</td>
+<td style="vertical-align: top; text-align: right; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">1.54</td>
+</tr>
+<tr>
+<td colspan="3" style="vertical-align: top; text-align: left; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">Sub-header for FizzBuzz</td>
+</tr>
+<tr>
+<td style="vertical-align: top; text-align: left; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">Fizz</td>
+<td style="vertical-align: top; text-align: right; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">3</td>
+<td style="vertical-align: top; text-align: right; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">4.12</td>
+</tr>
+<tr>
+<td style="vertical-align: top; text-align: left; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">Buzz</td>
+<td style="vertical-align: top; text-align: right; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">4</td>
+<td style="vertical-align: top; text-align: right; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">4.54</td>
+</tr>
+<tr>
+<td colspan="3" style="vertical-align: top; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.8pt 0pt 0pt 0pt; padding: 4pt 4pt 4pt 4pt;">This is the footnote text for the table</td>
+</tr>
+</table>
+
+</div>
+<div id="changing-a-value-of-a-cell" class="section level3">
+<h3>Changing a value of a cell</h3>
+<p>We can set the text value of a specific cells using <code>set_contents</code>.</p>
+<pre class="r"><code>library(magrittr)
+
+hdr1 &lt;- hux(&quot;Sub-header for FooBar&quot;, &quot;&quot;, &quot;&quot;)
+hdr2 &lt;- hux(&quot;Sub-header for FizzBuzz&quot;, &quot;&quot;, &quot;&quot;)
+
+example.huxtable %&gt;% 
+add_colnames %&gt;%
+set_bold(1, everywhere, TRUE) %&gt;%
+set_bottom_border(1, everywhere, 2) %&gt;%
+set_top_border(1, everywhere, 2) %&gt;%
+add_rows(hdr1, 1) %&gt;%  # the row is added **after** the specified row (new row is row 2)
+merge_cells(2, c(1, 3)) %&gt;%
+add_rows(hdr2, 4) %&gt;%  # at this point &quot;Bar&quot; is in row 4
+merge_cells(5, c(1, 3)) %&gt;%
+add_footnote(&quot;This is the footnote text for the table&quot;) %&gt;%
+set_caption(&quot;Caption text for table&quot;) %&gt;%
+set_caption_pos(&quot;bottom&quot;) %&gt;%
+set_col_width(c(2.0, 3.0, 1.5)) %&gt;%
+set_contents(1, 1, &quot;New Col 1&quot;)</code></pre>
+<table class="huxtable" style="border-collapse: collapse; margin-bottom: 2em; margin-top: 2em; width: 50%; margin-left: auto; margin-right: auto;  ">
+<caption style="caption-side: bottom; text-align: center;">Caption text for table</caption><col style="width: 200%"><col style="width: 300%"><col style="width: 150%"><tr>
+<td style="vertical-align: top; text-align: left; white-space: nowrap; border-style: solid solid solid solid; border-width: 2pt 0pt 2pt 0pt; padding: 4pt 4pt 4pt 4pt; font-weight: bold;">New Col 1</td>
+<td style="vertical-align: top; text-align: left; white-space: nowrap; border-style: solid solid solid solid; border-width: 2pt 0pt 2pt 0pt; padding: 4pt 4pt 4pt 4pt; font-weight: bold;">Col 2</td>
+<td style="vertical-align: top; text-align: left; white-space: nowrap; border-style: solid solid solid solid; border-width: 2pt 0pt 2pt 0pt; padding: 4pt 4pt 4pt 4pt; font-weight: bold;">Col 3</td>
+</tr>
+<tr>
+<td colspan="3" style="vertical-align: top; text-align: left; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">Sub-header for FooBar</td>
+</tr>
+<tr>
+<td style="vertical-align: top; text-align: left; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">Foo</td>
+<td style="vertical-align: top; text-align: right; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">1</td>
+<td style="vertical-align: top; text-align: right; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">1.12</td>
+</tr>
+<tr>
+<td style="vertical-align: top; text-align: left; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">Bar</td>
+<td style="vertical-align: top; text-align: right; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">2</td>
+<td style="vertical-align: top; text-align: right; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">1.54</td>
+</tr>
+<tr>
+<td colspan="3" style="vertical-align: top; text-align: left; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">Sub-header for FizzBuzz</td>
+</tr>
+<tr>
+<td style="vertical-align: top; text-align: left; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">Fizz</td>
+<td style="vertical-align: top; text-align: right; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">3</td>
+<td style="vertical-align: top; text-align: right; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">4.12</td>
+</tr>
+<tr>
+<td style="vertical-align: top; text-align: left; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">Buzz</td>
+<td style="vertical-align: top; text-align: right; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">4</td>
+<td style="vertical-align: top; text-align: right; white-space: nowrap; padding: 4pt 4pt 4pt 4pt;">4.54</td>
+</tr>
+<tr>
+<td colspan="3" style="vertical-align: top; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.8pt 0pt 0pt 0pt; padding: 4pt 4pt 4pt 4pt;">This is the footnote text for the table</td>
+</tr>
+</table>
+
+</div>
 </div>
 </div>
 
