@@ -4,6 +4,8 @@ In this note I will be making use of [rmarkdown](https://rmarkdown.rstudio.com/)
 Another good resource is [rmarkdown for scientists](https://rmd4sci.njtierney.com/).
 
 
+I have made an example rmarkdown file and associated filters that is suppose to bring together everything I've learned about output both pdf and word documents from the same rmarkdown file. It can be found at [example-rmarkdown](https://github.com/mellorjc/example-rmarkdown)
+
 
 The pipeline for compiling an rmarkdown document is as follows.
 ![The various stages of compiling a rmarkdown file down to a PDF or a word document](rmarkdown_compile.svg)
