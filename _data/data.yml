@@ -29,7 +29,7 @@ sidebar:
 
         
     interests:
-      - item: Climbing
+      - item: 
         link:
 
 career-profile:
@@ -84,12 +84,14 @@ projects:
         tagline: "RMarkdown notes"
 
 publications:
-    title: Publications
+    title: Publications, Conferences, and Workshop
     intro: |
-      You can list your publications in this section. Lorem ipsum dolor sit
-      amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
-      bibendum fringilla a eu lectus.
+       
     papers:
+      - title: "Predicting cardiovascular disease in people with Type 1 Diabetes from fundus images using deep learning"
+        authors: Joseph Mellor
+        conference: "EASD 2019"
+
       - title: "Deep Learning Predictions of Diabetic Retinopathy Associated with Progression of Renal Disease in Type 1 Diabetes"
         authors: Joseph Mellor
         conference: "ADA 2019"
@@ -98,31 +100,20 @@ publications:
         authors: Joseph Mellor
         conference: "EASD 2018"
 
-      - title: A syntax directed compiler for Algol 60
-        authors: Edgar T. Irons
-        conference: "Comm. ACM 4 (1961), 51–55"
 
 skills:
     title: Skills &amp; Proficiency
 
     toolset:
-      - name: Python & Django
+      - name: Python
         level: 98%
 
-      - name: Javascript & jQuery
+      - name: Pytorch
         level: 98%
 
-      - name: Angular
+      - name: R
         level: 98%
 
-      - name: HTML5 & CSS
-        level: 95%
-
-      - name: Ruby on Rails
-        level: 85%
-
-      - name: Sketch & Photoshop
-        level: 60%
 
 footer: >
     Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
