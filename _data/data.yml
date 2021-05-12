@@ -76,11 +76,11 @@ projects:
             Some notes on micellaneous topics
     assignments:
       - title: "Horseshoe prior in PyMC3, Pyro etc"
-        link: "#HorseshoePriorswithpymc3.html"
+        link: "HorseshoePriorswithpymc3.html"
         tagline: "Horseshoe prior in PyMC3, Pyro etc"
 
       - title: RMarkdown notes
-        link: "#rmarkdown.html"
+        link: "rmarkdown.html"
         tagline: "RMarkdown notes"
 
 publications:
