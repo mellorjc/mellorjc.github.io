@@ -21,6 +21,18 @@
     <div class="publication-title">{{ publication.title }}</div>
     <div class="publication-authors">{{ publication.authors }}</div>
     <div class="publication-conference">{{ publication.conference }}</div>
+    {% if publication.talk %}
+    <a href="{{ publication.talk }}"><i class="fas fa-link"></i></a>
+    {% endif %}
+    {% if publication.paper %}
+    <a href="{{ publication.paper }}"><i class="fas fa-link"></i></a>
+    {% endif %}
+    {% if publication.poster %}
+    <a href="{{ publication.poster }}"><i class="fas fa-link"></i></a>
+    {% endif %}
+    {% if publication.code %}
+    <a href="{{ publication.code }}"><i class="fas fa-link"></i></a>
+    {% endif %}
   </div><!--//item-->
   {% endfor %}
 
