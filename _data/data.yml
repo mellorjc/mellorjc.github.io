@@ -94,9 +94,11 @@ publications:
         arxiv: "https://arxiv.org/abs/2006.04647"
         
       - title: "Risks of and risk factors for COVID-19 disease in people with diabetes: a cohort study of the total population of Scotland"
-        conference: The Lancet Diabetes and Endochrinology 
-        authors: tuart J McGurnaghan, BSc, Amanda Weir, PhD, Jen Bishop, BSc, Sharon Kennedy, MSc
-, Luke A K Blackbourn, PhD, David A McAllister, MD, Prof Sharon Hutchinson, HonMFPH, Thomas M Caparrotta, MRCP, Joseph Mellor, PhD, Anita Jeyam, PhD, Joseph E O'Reilly, PhD, Prof Sarah H Wild, PhD, Sara Hatam, MSc, Andreas Höhn, PhD, Marco Colombo, PhD, Prof Chris Robertson, PhD, Nazir Lone, PhD, Janet Murray, MScPH, Elaine Butterly, MBChB, Prof John Petrie, FRCP, Prof Brian Kennon, MD, Prof Rory McCrimmon, MD, Robert Lindsay, FRCP, Prof Ewan Pearson, PhD, Prof Naveed Sattar, FMedSci, Prof John McKnight, MD, Prof Sam Philip, FRCP, Prof Andrew Collier, MD, Jim McMenamin, MBChB, Alison Smith-Palmer, PhD, Prof David Goldberg, DSc, Prof Paul M McKeigue, FRCP, Prof Helen M Colhoun, FRCP, Public Health Scotland COVID-19 Health Protection Study Group, Scottish Diabetes Research Network Epidemiology Group   
+        conference: "The Lancet Diabetes and Endochrinology "
+        authors: "Stuart J McGurnaghan, BSc, Amanda Weir, PhD, Jen Bishop, BSc, Sharon Kennedy, MSc
+, Luke A K Blackbourn, PhD, David A McAllister, MD, Prof Sharon Hutchinson, HonMFPH, Thomas M Caparrotta, MRCP, Joseph Mellor, PhD, Anita Jeyam, PhD, Joseph E O'Reilly, PhD, Prof Sarah H Wild, PhD, Sara Hatam, MSc, Andreas Höhn, PhD, Marco Colombo, PhD, Prof Chris Robertson, PhD, Nazir Lone, PhD, Janet Murray, MScPH, Elaine Butterly, MBChB, Prof John Petrie, FRCP, Prof Brian Kennon, MD, Prof Rory McCrimmon, MD, Robert Lindsay, FRCP, Prof Ewan Pearson, PhD, Prof Naveed Sattar, FMedSci, Prof John McKnight, MD, Prof Sam Philip, FRCP, Prof Andrew Collier, MD, Jim McMenamin, MBChB, Alison Smith-Palmer, PhD, Prof David Goldberg, DSc, Prof Paul M McKeigue, FRCP, Prof Helen M Colhoun, FRCP, Public Health Scotland COVID-19 Health Protection Study Group, Scottish Diabetes Research Network Epidemiology Group "
+        paper: "https://www.thelancet.com/journals/landia/article/PIIS2213-8587(20)30405-8/fulltext#articleInformation"
+
       - title: "Predicting cardiovascular disease in people with Type 1 Diabetes from fundus images using deep learning"
         authors: Joseph Mellor
         conference: "EASD 2019"
