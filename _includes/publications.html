@@ -22,16 +22,22 @@
     <div class="publication-authors">{{ publication.authors }}</div>
     <div class="publication-conference">{{ publication.conference }}</div>
     {% if publication.talk %}
-    <a href="{{ publication.talk }}"><i class="fas fa-link"></i></a>
+    <a href="{{ publication.talk }}"><i class="fas fa-tv"></i></a>
     {% endif %}
     {% if publication.paper %}
-    <a href="{{ publication.paper }}"><i class="fas fa-link"></i></a>
+    <a href="{{ publication.paper }}"><i class="fas fa-file-pdf"></i></a>
     {% endif %}
     {% if publication.poster %}
-    <a href="{{ publication.poster }}"><i class="fas fa-link"></i></a>
+    <a href="{{ publication.poster }}"><i class="fas fa-picture-o"></i></a>
     {% endif %}
     {% if publication.code %}
-    <a href="{{ publication.code }}"><i class="fas fa-link"></i></a>
+    <a href="{{ publication.code }}"><i class="fas fa-code"></i></a>
+    {% endif %}
+    {% if publication.arxiv %}
+    <a href="{{ publication.arxiv }}"><i class="fas fa-archive"></i></a>
+    {% endif %}
+    {% if publication.youtube %}
+    <a href="{{ publication.youtube }}"><i class="fas fa-youtube"></i></a>
     {% endif %}
   </div><!--//item-->
   {% endfor %}
