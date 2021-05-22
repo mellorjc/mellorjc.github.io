@@ -105,6 +105,11 @@ publications:
         authors: Joseph Mellor
         conference: "EASD 2018"
         talk: "https://www.easd.org/virtualmeeting/home.html#!resources/improving-diabetic-retinopathy-screening-using-deep-learning"
+        
+      - title: "Max-Min Thompson Sampling for the K-Armed Duelling Bandit Problem" 
+        authors: Joseph Mellor, Jonathan Shapiro
+        conference: "Multi-armed Bandit Workshop 2016 at STOR-i, Lancaster University, UK"
+        
 
 
 skills:
