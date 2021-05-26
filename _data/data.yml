@@ -92,6 +92,7 @@ publications:
         conference: "To appear at the International Conference on Machine Learning (ICML)"
         authors: "Joseph Mellor, Jack Turner, Amos Storkey, Elliot J. Crowley"
         arxiv: "https://arxiv.org/abs/2006.04647"
+        youtube: "https://www.youtube.com/watch?v=a6v92P0EbJc"
         
       - title: "Risks of and risk factors for COVID-19 disease in people with diabetes: a cohort study of the total population of Scotland"
         conference: "The Lancet Diabetes and Endochrinology "
@@ -128,6 +129,13 @@ publications:
       - title: "Max-Min Thompson Sampling for the K-Armed Duelling Bandit Problem" 
         authors: Joseph Mellor, Jonathan Shapiro
         conference: "Multi-armed Bandit Workshop 2016 at STOR-i, Lancaster University, UK"
+        
+      - title: "Thompson Sampling in Switching Environments with Bayesian Online Change Point Detection" 
+        authors: Joseph Mellor, Jonathan Shapiro
+        conference: "Sixteenth international conference on Artificial Intelligence and Statistics (AIStats 2013)"
+        paper: "http://proceedings.mlr.press/v31/mellor13a.pdf"
+        arxiv: "https://arxiv.org/abs/1302.3721"
+        
         
 
 
