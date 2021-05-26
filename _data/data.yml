@@ -101,6 +101,10 @@ publications:
         paper: "https://www.thelancet.com/journals/landia/article/PIIS2213-8587(20)30405-8/fulltext#articleInformation"
         shinyapp: "https://diabepi.shinyapps.io/covidrisk/"
 
+      - title: "Trajectory of COVID-19 epidemic in Europe"
+        authors: "Marco Colombo, Joseph Mellor, Helen M Colhoun, M Gabriela M Gomes, Paul M McKeigue"
+        arxiv:"https://www.medrxiv.org/content/10.1101/2020.09.26.20202267v1"
+
       - title: "Predicting cardiovascular disease in people with Type 1 Diabetes from fundus images using deep learning"
         authors: "Joseph C. Mellor, Amos J. Storkey, Helen Colhoun, Paul M. Mckeigue, on behalf of the SDRNT1BIO investigators"
         conference: "EASD 2019"
