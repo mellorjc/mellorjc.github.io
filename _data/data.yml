@@ -83,6 +83,10 @@ publications:
     intro: |
        
     papers:
+      - title: "Rising Rates And Widening Socio-economic Disparities In Diabetic Ketoacidosis In Type 1 Diabetes In Scotland: A Nationwide Retrospective Cohort Observational Study"
+        conference: "Diabetes Care"
+        authors: "Joseph E. O’Reilly, Anita Jeyam, Thomas M. Caparrotta, Joseph Mellor, Andreas Hohn, Paul M. McKeigue, Stuart J. McGurnaghan, Luke A.K. Blackbourn, Rory McCrimmon, Sarah H. Wild, John R. Petrie, John A. McKnight, Brian Kennon, John Chalmers, Sam Phillip, Graham Leese, Robert S. Lindsay, Naveed Sattar, Fraser W. Gibb, and Helen M. Colhoun, for the Scottish Diabetes Research Network Epidemiology Group"
+        
       - title: "Neural Architecture Search without Training"
         conference: "To appear at the International Conference on Machine Learning (ICML)"
         authors: "Joseph Mellor, Jack Turner, Amos Storkey, Elliot J. Crowley"
