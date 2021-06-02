@@ -83,6 +83,10 @@ publications:
     intro: |
        
     papers:
+      - title: "Evaluation of maculopathy deep learning prediction models using the SDRNT1BIO cohortg"
+        authors: "Joseph C. Mellor, Amos J. Storkey, Helen Colhoun, Paul M. Mckeigue, on behalf of the SDRNT1BIO investigators"
+        conference: "EASD 2021"
+
       - title: "Rising Rates And Widening Socio-economic Disparities In Diabetic Ketoacidosis In Type 1 Diabetes In Scotland: A Nationwide Retrospective Cohort Observational Study"
         conference: "Diabetes Care"
         authors: "Joseph E. O’Reilly, Anita Jeyam, Thomas M. Caparrotta, Joseph Mellor, Andreas Hohn, Paul M. McKeigue, Stuart J. McGurnaghan, Luke A.K. Blackbourn, Rory McCrimmon, Sarah H. Wild, John R. Petrie, John A. McKnight, Brian Kennon, John Chalmers, Sam Phillip, Graham Leese, Robert S. Lindsay, Naveed Sattar, Fraser W. Gibb, and Helen M. Colhoun, for the Scottish Diabetes Research Network Epidemiology Group"
