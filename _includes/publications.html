@@ -36,11 +36,12 @@
     {% if publication.arxiv %}
     <a href="{{ publication.arxiv }}"><i class="fas fa-archive"></i></a>
     {% endif %}
-    {% if publication.youtube %}
-    <a href="{{ publication.youtube }}"><i class="fab fa-youtube"></i></a>
-    {% endif %}
+    
     {% if publication.shinyapp %}
     <a href="{{ publication.shinyapp }}"><i class="fas fa-chart-area"></i></a>
+    {% endif %}
+    {% if publication.youtube %}
+    <a href="{{ publication.youtube }}">{% if publication.youtubecomment %} {{ publication.youtubecomment }} {% endif %}<i class="fab fa-youtube"></i></a>
     {% endif %}
   </div><!--//item-->
   {% endfor %}
