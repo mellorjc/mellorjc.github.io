@@ -95,7 +95,8 @@ publications:
         conference: "To appear at the International Conference on Machine Learning (ICML)"
         authors: "Joseph Mellor, Jack Turner, Amos Storkey, Elliot J. Crowley"
         arxiv: "https://arxiv.org/abs/2006.04647"
-        youtube: "https://www.youtube.com/watch?v=a6v92P0EbJc"
+        yannicyoutube: "https://www.youtube.com/watch?v=a6v92P0EbJc"
+        yanniccomment: "An earlier version of this paper featured on Yannic Kilcher's youtube channel"
         
       - title: "Risks of and risk factors for COVID-19 disease in people with diabetes: a cohort study of the total population of Scotland"
         conference: "The Lancet Diabetes and Endochrinology "
