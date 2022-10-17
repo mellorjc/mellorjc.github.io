@@ -83,9 +83,14 @@ publications:
     intro: |
        
     papers:
+      - title: "Cohort profile: the Scottish Diabetes Research Network national diabetes cohort – a population-based cohort of people with diabetes in Scotland"
+        authors: "Stuart J. McGurnaghan, Luke A. K. Blackbourn, Thomas M. Caparrotta1, Joseph Mellor, Anna Barnett, Andy Collier, Naveed Sattar, John McKnight, John Petrie, Sam Philip6, Robert Lindsay, Katherine Hughes, David McAllister, Graham P Leese, Ewan R Pearson, Sarah Wild, Paul M McKeigue, Helen M Colhoun"
+        conference: "BMJ Open 2022"
+        paper: "https://bmjopen.bmj.com/content/12/10/e063046.long"
+        
       - title: "Evaluation of maculopathy deep learning prediction models using the SDRNT1BIO cohortg"
         authors: "Joseph C. Mellor, Amos J. Storkey, Helen Colhoun, Paul M. Mckeigue, on behalf of the SDRNT1BIO investigators"
-        conference: "To appear at EASD 2021"
+        conference: "EASD 2021"
 
       - title: "Rising Rates And Widening Socio-economic Disparities In Diabetic Ketoacidosis In Type 1 Diabetes In Scotland: A Nationwide Retrospective Cohort Observational Study"
         conference: "Diabetes Care"
