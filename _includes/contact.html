@@ -60,6 +60,12 @@
       <a href="https://www.codewars.com/users/{{ sidebar.codewars }}/completed_solutions" target="_blank">{{ sidebar.codewars }}</a>
     </li>
     {% endif %}
+    
+    {% if sidebar.scholar %}
+    <li class="scholar"><i class="fas fa-code"></i>
+      <a href="{{ sidebar.scholar }}" target="_blank">Google Scholar</a>
+    </li>
+    {% endif %}
 
   </ul>
 </div><!--//contact-container-->
