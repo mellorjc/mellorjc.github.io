@@ -84,6 +84,21 @@ publications:
     intro: |
        
     papers:
+      - title: "Deep learning detection of diabetic retinopathy in Scotland’s diabetic eye screening programme"
+        authors: "Alan Fleming, Joseph Mellor, Stuart J. McGurnaghan, Luke A. K. Blackbourn, Keith Goatman, Caroline Styles, Amos J. Storkey, Paul M. McKeigue, Helen M. Colhoun"
+        conference: "British Journal of Ophthalmology 2023 (In Press)"
+        paper: ""
+        
+      - title: "Prediction of retinopathy progression using deep learning on retinal images within the Scottish screening programme"
+        authors: "Joseph Mellor, Wenhua Jiang, Alan Fleming, Stuart J. McGurnaghan, Luke A. K. Blackbourn, Caroline Styles, Amos J. Storkey, Paul M. McKeigue, Helen M. Colhoun"
+        conference: "British Journal of Ophthalmology 2023 (In Press)"
+        paper: ""
+      
+      - title: "Can deep learning on retinal images augment known risk factors for cardiovascular disease prediction in diabetes? A prospective cohort study from the national screening programme in Scotland"
+        authors: "Joseph Mellor, Wenhua Jiang, Alan Fleming, Stuart J. McGurnaghan, Luke A. K. Blackbourn, Caroline Styles, Amos J. Storkey, Paul M. McKeigue, Helen M. Colhoun"
+        conference: "International Journal of Medical Informatics 2023"
+        paper: "https://www.sciencedirect.com/science/article/pii/S1386505623000904"
+        
       - title: "Cohort profile: the Scottish Diabetes Research Network national diabetes cohort – a population-based cohort of people with diabetes in Scotland"
         authors: "Stuart J. McGurnaghan, Luke A. K. Blackbourn, Thomas M. Caparrotta, Joseph Mellor, Anna Barnett, Andy Collier, Naveed Sattar, John McKnight, John Petrie, Sam Philips, Robert Lindsay, Katherine Hughes, David McAllister, Graham P Leese, Ewan R Pearson, Sarah Wild, Paul M McKeigue, Helen M Colhoun"
         conference: "BMJ Open 2022"
