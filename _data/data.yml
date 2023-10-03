@@ -86,8 +86,8 @@ publications:
     papers:
       - title: "Deep learning detection of diabetic retinopathy in Scotland’s diabetic eye screening programme"
         authors: "Alan Fleming, Joseph Mellor, Stuart J. McGurnaghan, Luke A. K. Blackbourn, Keith Goatman, Caroline Styles, Amos J. Storkey, Paul M. McKeigue, Helen M. Colhoun"
-        conference: "British Journal of Ophthalmology 2023 (In Press)"
-        paper: ""
+        conference: "British Journal of Ophthalmology 2023"
+        paper: "https://bjo.bmj.com/content/early/2023/09/13/bjo-2023-323395"
         
       - title: "Prediction of retinopathy progression using deep learning on retinal images within the Scottish screening programme"
         authors: "Joseph Mellor, Wenhua Jiang, Alan Fleming, Stuart J. McGurnaghan, Luke A. K. Blackbourn, Caroline Styles, Amos J. Storkey, Paul M. McKeigue, Helen M. Colhoun"
