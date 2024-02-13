@@ -92,7 +92,7 @@ publications:
       - title: "Prediction of retinopathy progression using deep learning on retinal images within the Scottish screening programme"
         authors: "Joseph Mellor, Wenhua Jiang, Alan Fleming, Stuart J. McGurnaghan, Luke A. K. Blackbourn, Caroline Styles, Amos J. Storkey, Paul M. McKeigue, Helen M. Colhoun"
         conference: "British Journal of Ophthalmology 2023 (In Press)"
-        paper: ""
+        paper: "https://bjo.bmj.com/content/early/2024/02/04/bjo-2023-323400"
       
       - title: "Can deep learning on retinal images augment known risk factors for cardiovascular disease prediction in diabetes? A prospective cohort study from the national screening programme in Scotland"
         authors: "Joseph Mellor, Wenhua Jiang, Alan Fleming, Stuart J. McGurnaghan, Luke A. K. Blackbourn, Caroline Styles, Amos J. Storkey, Paul M. McKeigue, Helen M. Colhoun"
