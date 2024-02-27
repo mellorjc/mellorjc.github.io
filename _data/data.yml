@@ -84,6 +84,11 @@ publications:
     intro: |
        
     papers:
+      - title: "Role of Systemic Factors in Improving the Prognosis of Diabetic Retinal Disease and Predicting Response to Diabetic Retinopathy Treatment"
+        authors: "Joe Mellor, Anita Jeyam, Joline WJ. Beulens, Sanjeeb Bhandari, Geoffrey Broadhead, Emily Chew, Ward Fickweiler, Amber van der Heijden, Daniel Gordin, Rafael Simó, Janet Snell-Bergeon, Anniina Tynjälä, Helen Colhoun"
+        conference: "Ophthalmology Science 2024"
+        paper: "https://www.sciencedirect.com/science/article/pii/S2666914524000307"
+        
       - title: "Deep learning detection of diabetic retinopathy in Scotland’s diabetic eye screening programme"
         authors: "Alan Fleming, Joseph Mellor, Stuart J. McGurnaghan, Luke A. K. Blackbourn, Keith Goatman, Caroline Styles, Amos J. Storkey, Paul M. McKeigue, Helen M. Colhoun"
         conference: "British Journal of Ophthalmology 2023"
